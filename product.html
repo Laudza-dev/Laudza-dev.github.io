@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <style>
+          *{
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+            width: 90%;
+            margin: 90px auto;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: white;
+            padding: 15px;
+            margin-top: 0;
+            background-color: transparent;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        li{
+            padding: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        p{
+            color: whitesmoke;
+        }
+        [class*='box']{
+            box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .media{
+            box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            height: 300px;
+            width: 100%;
+            float: center;
+            background-position: center;
+            background-size: cover;
+            margin-bottom: 20px;
+        }
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            background: url(lochel\ dark\ walpaper.svg), #000;
+            background-position: center;
+            background-size: cover;
+            color: white;
+        }
+        @media only screen and (max-width: 768px){
+            .container, ul{
+                display: block;
+            }
+        }
+        .box-1 .media{
+            background-image: url(mockup\ tshirt.svg);
+        }
+        .box-2 .media{
+            background-image: url(mockup\ hoodie.svg);
+        }
+        .box-3 .media{
+            background-image: url(mockup\ hats.svg);
+        }
+        .box-4 .media{
+            background-image: url(mockup\ croptop.svg);
+        }
+        .box-5 .media{
+            background-image: url(mockup\ accesorise.svg);
+        }
+        .box-6 .media{
+            background-image: url(3\ copy.svg);
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#">Search</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="/about.html">About Us</a></li>
+    </ul>
+    <div class="container">
+        <div class="box-1">
+            <div class="media"></div>
+            <h2><a href="/tshirt.html">T-Shirt</a></h2>
+            <p>Reguller fit, Boxy Tee</p>
+        </div>
+        <div class="box-2">
+            <div class="media"></div>
+            <h2><a href="/hoodie.html">Hoodie</a></h2>
+            <p>Boxy Tee, Crop Hoodie</p>
+        </div>
+        <div class="box-3">
+            <div class="media"></div>
+            <h2><a href="/hats.html">Hats</a></h2>
+            <p>Snapback, Baseball cap</p>
+        </div>
+        <div class="box-4">
+            <div class="media"></div>
+            <h2><a href="/croptop.html">Crop top</a></h2>
+            <p>women Crop</p>
+        </div>
+        <div class="box-5">
+            <div class="media"></div>
+            <h2><a href="/accesorise.html">Accesorise</a></h2>
+            <p>Zippo, case phone, wallet</p>
+        </div>
+        <div class="box-6">
+            <div class="media"></div>
+            <h2><a href="/allitem.html">Other</a></h2>
+            <p>All Items</p>
+        </div>
+    </div>
+</body>
+</html>
