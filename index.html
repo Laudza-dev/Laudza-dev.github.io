@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lochel.ind</title>
+    <title>UTS</title>
     <style>
         *{
             box-sizing: border-box;
@@ -11,7 +11,7 @@
         .container{
             display: grid;
             grid-template-columns: repeat(3,1fr);
-            gap: 10px;
+            gap: 15px;
             width: 90%;
             margin: 90px auto;  
         }
@@ -22,10 +22,11 @@
         }
         .media{
             box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            height: 90px;
+            border-radius: 10px;
+            height: 75px;
             width: 100px;
             float: right;
+            margin: 10px;
             background-position: center;
             background-size: cover;
         }
@@ -35,9 +36,12 @@
         }
         .box-1 > .media{
             width: 100%;
-            height: 200px;
+            height: 250px;
             margin-bottom: 20px;
-            background-image: url(2\ copy\ 2.svg);
+            background-image: url(Javascript\ photo.jpg);
+            border-radius: 0;
+            margin-top: 0;
+            margin-right: 0;
         }
         ul{
             list-style: none;
@@ -47,9 +51,9 @@
             top: 0;
             width: 100%;
             padding: 15px;
-            margin-top: 0; 
+            margin-top: 0;
             backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px); 
         }
         li{
             padding: 10px;
@@ -58,41 +62,38 @@
             margin: 0;
             font-family: Arial, sans-serif;
             font-size: 14px;
-            color: white;
+            color:black;
             min-height: 100vh;
             width: 100%;
             height: 90%;
-            background: url(lochel\ dark\ walpaper.svg), #ffff;
-            background-position: center;
-            background-size: cover;
         }
         .box-1 > p .box-1 > h2{
             padding-left: 10px;
         }
         .box-2 .media{
-            background-image: url(mockup\ tshirt.svg);
+            background-image: url(bootstrap.jpeg);
         }
         .box-3 .media{
-            background-image: url(mockup\ hoodie.svg);
+            background-image: url(apache.jpg);
         }
         .box-4 .media{
-            background-image: url(mockup\ croptop.svg);
+            background-image: url(MySQL\ Logo\ PNG\ Vector\ \(EPS\)\ Free\ Download.jpeg);
         }
         .box-5 .media{
-            background-image: url(mockup\ hats.svg);
+            background-image: url(list\ data.png);
         }
         .box-6 .media{
-            background-image: url(mockup\ accesorise.svg);
+            background-image: url(bind.jpg);
         }
         .box-7 .media{
-            background-image: url(3\ copy.svg);
+            background-image: url(composer.png);
         }
         a{
             text-decoration: none;
-            color: white;
+            color: black;
         }
         p{
-            color: whitesmoke;
+            color: grey;
         }
         @media only screen and (max-width: 768px){
             .container, ul{
@@ -104,45 +105,51 @@
 <body>
     <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">Search</a></li>
-        <li><a href="/product.html">Product</a></li>
-        <li><a href="/about.html">About Us</a></li>
+        <li><a href="#">Course</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="/portfoliouts.html">Portfolio</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="#">Teams</a></li>
     </ul>
     <div class="container">
         <div class="box-1">
             <div class="media"></div>
-            <h2><a href="/about.html">About Us</a></h2>
-            <p>About Profile Lochel.ind</p>
+            <h3>Web Design & Programming</h3>
+            <p>
+                Membangun website menggunakan kode HTML, CSS, dan JavaScript sederhana.
+                Menerapkan struktur website yg baik menggunakan standar semantic HTML. 
+                Mendemonstrasikan penyusunan layout website menggunakan teknik float atau flexbox.
+            </p>
         </div>
         <div class="box-2">
             <div class="media"></div>
-            <h2><a href="/product.html">T-Shirt</a></h2>
-            <p>12 Items</p>
+            <h3>Menggunakan Bootstrap 5 dan Bootstrap icon pada Laravel 8</h3>
+            <p>2 Minggu yang lalu</p>
         </div>
         <div class="box-3">
             <div class="media"></div>
-            <h2><a href="/product.html">Hoodie</a></h2>
-            <p>5 Items</p>
+            <h3>Membuat VirtualHost Apache</h3>
+            <p>6 Bulan yang lalu</p>
         </div>
         <div class="box-4">
             <div class="media"></div>
-            <h2><a href="product.html">Crop Top</a></h2>
-            <p>4 Items</p>
+            <h3>Menginstal MySQL di Ubuntu 20.04</h3>
+            <p>6 Bulan yang lalu</p>
         </div>
         <div class="box-5">
             <div class="media"></div>
-            <h2><a href="product.html">Hats</a></h2>
-            <p>2 Items</p>
+            <h3>Membuat List Data dengan RecyclerView dan Activity Detail</h3>
+            <p>6 Bulan yang lalu</p>
         </div>
         <div class="box-6">
             <div class="media"></div>
-            <h2><a href="product.html">Acessorise</a></h2>
-            <p>15 Items</p>
+            <h3>DNS Server Linux dengan Bind</h3>
+            <p>6 Bulan yang lalu</p>
         </div>
         <div class="box-7">
             <div class="media"></div>
-            <h2><a href="product.html">All Item</a></h2>
-            <p>38 Items</p>
+            <h3>Instalasi & Konfigurasi Composer, Laravel, PHP7, MySQL & Valet di ubuntu 16.04</h3>
+            <p>4 tahun yang lalu</p>
         </div>
     </div>
 </body>
