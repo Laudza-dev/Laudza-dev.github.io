@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="menu.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 15px;
+            width: 90%;
+            margin: 90px auto;  
+        }
+        [class*='box']{
+            box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .media{
+            box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            height: 100px;
+            width: 100px;
+            float: right;
+            margin: 10px;
+            background-position: center;
+            background-size: cover;
+        }
+        .box-1{
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+        .box-1 > .media{
+            width: 100%;
+            height: 250px;
+            margin-bottom: 20px;
+            background-image: url(LP3I\ logo.png);
+            border-radius: 0;
+            margin-top: 0;
+            margin-right: 0;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 15px;
+            margin-top: 0;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px); 
+        }
+        li{
+            padding: 10px;
+        }
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color:black;
+            min-height: 100vh;
+            width: 100%;
+            height: 90%;
+        }
+        .box-1 > p .box-1 > h2{
+            padding-left: 10px;
+        }
+        .box-2 .media{
+            background-image: url(HTML5.jpeg);
+        }
+        .box-3 .media{
+            background-image: url(css.jpeg);
+        }
+        .box-4 .media{
+            background-image: url(layoutt.jpeg);
+        }
+        .box-5 .media{
+            background-image: url(js.jpeg);
+        }
+        .box-6 .media{
+            background-image: url(github.jpeg);
+        }
+        .box-7 .media{
+            background-image: url(The\ Fetch\ API.jpeg);
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        p{
+            color: grey;
+        }
+        @media only screen and (max-width: 768px){
+            .container, ul{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box-1">
+            <div class="media"></div>
+            <h3>LP3I Collage Banten</h3>
+            <p>
+                LP3I College adalah lembaga pendidikan 2 tahun siap kerja yang dibekali dengan program pendidikan dengan ilmu terapan yang spesifik.
+                Setiap lulusan dari LP3I College akan mendapatkan sertifikasi profesi yang dapat digunakan untuk mendapatkan kerja.
+            </p>
+        </div>
+        <div class="box-2">
+            <div class="media"></div>
+            <h3>HTML</h3>
+            <p>
+                Pengenalan HTMl dan Stuktur Dasar HTML.
+                Atribut HtML dan Basic Element.
+                Teks Terformat dan Semantic HTML.
+                Table dan Form.
+            </p>
+            <p>6 Bulan Yang lalu</p>
+        </div>
+        <div class="box-3">
+            <div class="media"></div>
+            <h3>CSS</h3>
+            <p>
+                Pengenalan Style dan Penulisan dan cara menambahkan CSS.
+                Color, Background, Formating Texs, Text Style, Box Element, Border.
+                Padding & Margin. Box Shadow & Rouded Corner. Posotioning.
+            </p>
+            <p>4 Bulan yang Lalu</p>
+        </div>
+        <div class="box-4">
+            <div class="media"></div>
+            <h3>Layout Responsive</h3>
+            <p>Meta Viewport. Media Query. Flexbox. Grid </p>
+            <p>3 Bulan yang lalu</p>
+        </div>
+        <div class="box-5">
+            <div class="media"></div>
+            <h3>Java Script</h3>
+            <p>Perkenalan JS. Dasar JS. Browser Object Model.Document Object Model. Event. Latihan Event & DOM</p>
+            <p>2 Minggu yang lalu</p>
+        </div>
+        <div class="box-6">
+            <div class="media"></div>
+            <h3>Publish</h3>
+            <p>DNS Server. Instalasi Domain ID. Menggunakan Hosting Git Hub Pages</p>
+            <p>2 MInggu yang lalu</p>
+        </div>
+        <div class="box-7">
+            <div class="media"></div>
+            <h3>AJAX</h3>
+            <p>Pengenalan AJAX. Request. Fecth API</p>
+            <p>1 Minggu yang lalu</p>
+        </div>
+    </div>
+</body>
+<script src="menu.js"></script>
+</html>
